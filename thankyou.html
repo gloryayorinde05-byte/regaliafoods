@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Order Confirmed — Regalia Foods</title>
+<meta name="robots" content="noindex" />
+<link rel="icon" href="data:," />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-thankyou-page>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="seal" aria-hidden="true">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="18.5" stroke="#C6912F" stroke-width="1.4"/>
+          <path d="M20 8C20 8 29 15 29 24C29 31 25 36 20 39C15 36 11 31 11 24C11 15 20 8 20 8Z" fill="#123B29"/>
+          <path d="M20 12V37" stroke="#E8C874" stroke-width="1"/>
+        </svg>
+      </span>
+      <span>Regalia Foods<span class="brand-sub">FUTA Akure · Ondo State</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Store</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="careers.html">Job Offers</a></li>
+    </ul>
+    <div class="nav-actions"></div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section" style="padding-top:64px;">
+    <div class="container" style="max-width:560px;">
+      <div class="form-card" style="text-align:center;">
+        <div style="width:64px; height:64px; margin:0 auto 20px; border-radius:50%; background:rgba(47,143,91,0.14); display:flex; align-items:center; justify-content:center;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1F6B45" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>
+        </div>
+        <h2>Order confirmed</h2>
+        <p style="color:var(--stone);">Thank you for shopping with Regalia Foods. Your payment was successful and we're preparing your order.</p>
+        <p style="font-family:var(--font-mono); font-size:0.85rem; color:var(--green-deep); background:var(--cream); display:inline-block; padding:8px 16px; border-radius:999px;">
+          Ref: <span data-order-ref>—</span>
+        </p>
+        <div data-order-detail style="text-align:left; margin-top:20px;"></div>
+        <a href="index.html" class="btn btn-gold" style="margin-top:24px;">Continue shopping</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" style="margin-top:0;">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none; padding-top:0;">
+      <span>© <span id="year"></span> Regalia Foods. All rights reserved.</span>
+      <span>FUTA South Gate, Akure, Ondo State</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
